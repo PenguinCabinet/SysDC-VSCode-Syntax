@@ -18,7 +18,16 @@
 			"include": "#func"
 		},
 		{
+			"include": "#proc"
+		},
+		{
 			"include": "#return"
+		},
+		{
+			"include": "#spawn"
+		},
+		{
+			"include": "#modify"
 		},
 		{
 			"include": "#strings"
@@ -66,6 +75,14 @@
 				}
 			]
 		},
+		"proc": {
+			"patterns": [
+				{
+					"name": "storage.type.sysdc",
+					"match": "\\b(proc)\\b"
+				}
+			]
+		},
 		"return": {
 			"patterns": [
 				{
@@ -74,9 +91,23 @@
 				}
 			]
 		},
-		"identifier": {
-			"match": "\\b[[:upper:]][[:alnum:]]*"
+		"spawn": {
+			"patterns": [
+				{
+					"name": "keyword.control.sysdc",
+					"match": "\\b(spawn)\\b"
+				}
+			]
 		},
+		"modify": {
+			"patterns": [
+				{
+					"name": "keyword.control.sysdc",
+					"match": "\\b(modify)\\b"
+				}
+			]
+		},
+
 		"strings": {
 			"name": "string.quoted.double.sysdc",
 			"begin": "\"",
