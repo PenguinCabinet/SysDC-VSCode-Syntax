@@ -19,11 +19,11 @@ Now,Nothing.
 Open this repository in VS Code and run.    
 
 ## 🔨Release Notes
-
+Now,Nothing.
 
 ## 🔍For more information
 
-* [Repository of this]()
+* [Repository of this](https://github.com/PenguinCabinet/SysDC-VSCode-Syntax)
 
 ## 🎫LICENSE
 [MIT LICENSE](./LICENSE)
