@@ -1,30 +1,34 @@
-# SysDC-VSCode-Syntax
+# 💡SysDC-VSCode-Syntax
 
 This is syntax highlight extension of [SysDC](https://github.com/Yuta1004/SysDC) in VS Code.    
 
-## Features
+## ✅Features
 
 * This can highlight the SysDC source code.
 
-## Requirements
+## ✅Requirements
 
 Nothing.
 
-## Extension Settings
+## ✅Extension Settings
 Now,Nothing.
 
 
-## Release Notes
+## 🏗Dev
+### Debug
+Open this repository in VS Code and run.    
+
+## 🔨Release Notes
 
 
-## For more information
+## 🔍For more information
 
 * [Repository of this]()
 
-## LICENSE
+## 🎫LICENSE
 [MIT LICENSE](./LICENSE)
 
-## Author
+## ✍Author
 
 [PenguinCabinet](https://github.com/PenguinCabinet)
 
