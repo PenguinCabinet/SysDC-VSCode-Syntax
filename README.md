@@ -1,3 +1,4 @@
+**Now,Currently under development.**
 # 💡SysDC-VSCode-Syntax
 
 This is syntax highlight extension of [SysDC](https://github.com/Yuta1004/SysDC) in VS Code.    
