@@ -1,0 +1,93 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "SysDC",
+	"patterns": [
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#unit"
+		},
+		{
+			"include": "#data"
+		},
+		{
+			"include": "#module"
+		},
+		{
+			"include": "#func"
+		},
+		{
+			"include": "#return"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"types": {
+			"patterns": [
+				{
+					"name": "storage.type.sysdc",
+					"match": "\\b(void|i32|u32|f32|bool|char)\\b"
+				}
+			]
+		},
+		"unit": {
+			"patterns": [
+
+				{
+					"name": "keyword.other.sysdc",
+					"match": "\\b(unit)\\b"
+				}
+			]
+		},
+		"data": {
+			"patterns": [
+				{
+					"name": "storage.type.sysdc",
+					"match": "\\b(data)\\b"
+				}
+			]
+		},
+		"module": {
+			"patterns": [
+				{
+					"name": "storage.type.sysdc",
+					"match": "\\b(module)\\b"
+				}
+			]
+		},
+		"func": {
+			"patterns": [
+				{
+					"name": "storage.type.sysdc",
+					"match": "\\b(func)\\b"
+				}
+			]
+		},
+		"return": {
+			"patterns": [
+				{
+					"name": "keyword.control.sysdc",
+					"match": "\\b([@]return)\\b"
+				}
+			]
+		},
+		"identifier": {
+			"match": "\\b[[:upper:]][[:alnum:]]*"
+		},
+		"strings": {
+			"name": "string.quoted.double.sysdc",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.sysdc",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "SysDC"
+}

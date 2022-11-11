@@ -1,0 +1,25 @@
+{
+    "name": "sysdc-vscode-syntax",
+    "displayName": "SysDC-VSCode-syntax",
+    "description": "Syntax Highlight of SysDC",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.73.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "sysdc",
+            "aliases": ["SysDC", "sysdc"],
+            "extensions": [""],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "sysdc",
+            "scopeName": "SysDC",
+            "path": "./syntaxes/sysdc.tmLanguage.json"
+        }]
+    }
+}
