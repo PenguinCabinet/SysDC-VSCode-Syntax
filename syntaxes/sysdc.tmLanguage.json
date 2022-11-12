@@ -6,7 +6,7 @@
 			"include": "#types"
 		},
 		{
-			"include": "#unit"
+			"include": "#module_sentence"
 		},
 		{
 			"include": "#data"
@@ -30,6 +30,15 @@
 			"include": "#modify"
 		},
 		{
+			"include": "#tag"
+		},
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#number"
+		},
+		{
 			"include": "#strings"
 		}
 	],
@@ -42,12 +51,12 @@
 				}
 			]
 		},
-		"unit": {
+		"module_sentence": {
 			"patterns": [
 
 				{
 					"name": "keyword.other.sysdc",
-					"match": "\\b(unit)\\b"
+					"match": "\\b(unit|from|import)\\b"
 				}
 			]
 		},
@@ -107,6 +116,32 @@
 				}
 			]
 		},
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.sysdc",
+					"match": "\\%[A-Za-z_]*\\b"
+				}
+			]
+		},
+
+		"tag":{
+			"patterns": [
+				{
+					"name": "meta.name.tag",
+					"match": "\\\\@[a-zA-Z_]*\\b"
+				}
+			]
+        },
+
+		"number":{
+			"patterns": [
+				{
+					"name": "constant.numeric.tag",
+					"match": "[1-9][0-9]*\\.?[0-9]*"
+				}
+			]
+        },
 
 		"strings": {
 			"name": "string.quoted.double.sysdc",
