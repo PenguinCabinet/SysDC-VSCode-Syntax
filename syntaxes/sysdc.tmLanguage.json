@@ -87,7 +87,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.sysdc",
-					"match": "\\b([@]return)\\b"
+					"match": "\\b(return)\\b"
 				}
 			]
 		},
